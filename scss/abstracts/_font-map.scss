@@ -1,0 +1,21 @@
+@import "variables";
+
+$f-family: (
+  fuentePrincipal: $fuentePrincipal,
+  fuenteSecundaria: $fuenteSecundaria,
+); 
+$f-weight: (
+  claro: 300,
+  normal: 400,
+  oscuro: 500,
+);
+$f-size: (
+  h1: 1.8em,
+  h2: 1.6em,
+  h3: 1.5em,
+  h4: 1.4em,
+  h5: 1.3em,
+  h6: 1.2em,
+  p: 1.125em,
+  a: 1.125em,
+);

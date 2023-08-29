@@ -1,0 +1,53 @@
+@import "variables";
+
+@mixin flex($justify, $align, $direction: row, $wrap: nowrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+%mixin espaciadoNulo {
+  margin: $m-0;
+  padding: $p-0;
+}
+
+@mixin logo {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+
+@mixin boxImgNosotros {
+  padding: $p-0;
+  margin: $m-0 20px;
+  border-radius: 15px;
+  border-width: 10px 0px;
+  border-style: solid;
+  border-color: white;
+}
+
+@mixin whatsaap {
+  .whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    .whatsapp-icon {
+      margin-top: 13px;
+    }
+  }
+}

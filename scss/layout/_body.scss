@@ -1,0 +1,6 @@
+@import "../abstracts/background-map";
+
+body {
+  background-image: map-get($bgbody_img, image);
+  background-size: map-get($bgbody_img, size);
+}

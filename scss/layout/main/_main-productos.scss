@@ -1,0 +1,19 @@
+@import "../../abstracts/mixins";
+.mainProductos {
+  .gridProd {
+    margin-bottom: 50px;
+  }
+  div {
+    padding: 5px 10px;
+  }
+  img {
+    width: 300px;
+    height: 290px;
+    border-radius: 15px;
+    display: flex;
+    margin: auto;
+  }
+  p {
+    padding: 5px;
+  }
+}
