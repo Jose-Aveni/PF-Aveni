@@ -1,6 +1,6 @@
-@import "../../abstracts/mixins";
-
 .mainIndex {
+  position: relative;
+  top: 25vh;
   img {
     border-radius: 15%;
     padding: 5px 10px;
@@ -14,4 +14,3 @@
     padding: 10px;
   }
 }
-@include whatsaap;

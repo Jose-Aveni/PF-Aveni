@@ -1,5 +1,8 @@
 @import "../../abstracts/variables";
-
+ 
+.mainContenido{
+  position: relative;
+  top: 25vh;
 .customCarousel {
   text-align: center;
   #carouselContenido {
@@ -21,4 +24,5 @@
     display: flex;
     margin: $m-0 auto;
   }
+}
 }

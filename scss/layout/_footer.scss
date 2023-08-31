@@ -1,14 +1,13 @@
-footer {
-    margin-top: 20px;
-    background-color: rgb(179, 228, 228);
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import "../abstracts/background-map";
 
-  p {
-    margin-right: 5px;
-    position: relative;
-    top: 6px;
-  }
-  }
+footer {
+  position: relative;
+  top: 25vh;
+  width: map-get($bgcontainer_img, min-w);
+  background-color: map-get($bgcontainer_img, color);
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}

@@ -2,5 +2,5 @@
 
 body {
   background-image: map-get($bgbody_img, image);
-  background-size: map-get($bgbody_img, size);
+  background-repeat: map-get($bgbody_img, repeat);
 }
