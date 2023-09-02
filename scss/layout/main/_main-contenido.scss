@@ -1,23 +1,26 @@
 @import "../../abstracts/variables";
+@import "../../abstracts/mixins";
  
 .mainContenido{
   position: relative;
   top: 25vh;
-.customCarousel {
-  text-align: center;
-  #carouselContenido {
-    display: inline-block;
-    width: 50%;
-    img {
-      display: flex;
-      max-height: 60vh;
-    }
+.carousel{
+  width: 60%;
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(1);
+  }
+  img{
+      width: 100%;
+      max-height: 75vh;
   }
 }
 .customIframe {
   aspect-ratio: 5/3;
   width: $w-100;
-
+  p{
+    width: 65%;
+    margin: auto;
+  }
   iframe {
     width: 65%;
     height: 65%;

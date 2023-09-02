@@ -17,7 +17,7 @@ a:active {
 }
 
 body {
-  background-image: url("../images/mufins_back.png");
+  background-image: url("../images/mufins_back.svg");
   background-repeat: repeat-y;
 }
 
@@ -140,6 +140,12 @@ footer {
   position: relative;
   top: 25vh;
 }
+.mainNosotros .mainNosotrosLogo .carousel {
+  width: min-content;
+}
+.mainNosotros .mainNosotrosLogo .carousel .carousel-control-next-icon, .mainNosotros .mainNosotrosLogo .carousel .carousel-control-prev-icon {
+  filter: invert(1);
+}
 .mainNosotros .mainNosotrosLogo p {
   padding: 10px;
   margin: 0px;
@@ -195,20 +201,23 @@ footer {
   position: relative;
   top: 25vh;
 }
-.mainContenido .customCarousel {
-  text-align: center;
+.mainContenido .carousel {
+  width: 60%;
 }
-.mainContenido .customCarousel #carouselContenido {
-  display: inline-block;
-  width: 50%;
+.mainContenido .carousel .carousel-control-next-icon, .mainContenido .carousel .carousel-control-prev-icon {
+  filter: invert(1);
 }
-.mainContenido .customCarousel #carouselContenido img {
-  display: flex;
-  max-height: 60vh;
+.mainContenido .carousel img {
+  width: 100%;
+  max-height: 75vh;
 }
 .mainContenido .customIframe {
   aspect-ratio: 5/3;
   width: 100%;
+}
+.mainContenido .customIframe p {
+  width: 65%;
+  margin: auto;
 }
 .mainContenido .customIframe iframe {
   width: 65%;

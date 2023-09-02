@@ -5,6 +5,12 @@
   position: relative;
   top: 25vh;
 .mainNosotrosLogo {
+  .carousel{
+    width: min-content;
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+      filter: invert(1);
+    }
+  }
   p {
     padding: 10px;
     margin: $m-0;
