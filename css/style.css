@@ -1,19 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Oswald:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400;1,500&family=Oswald:wght@300;400;500&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgb(240, 240, 240);
 }
 a:hover {
-  color: rgba(0, 0, 0, 0.75);
+  color: rgb(63, 63, 63);
 }
 a:active {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 body {
@@ -22,13 +26,13 @@ body {
 }
 
 a {
-  font-family: "Josefin Sans";
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 1.125em;
+  font-size: 1.2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald ", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   text-align: center;
   padding: 10px;
@@ -40,38 +44,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-family: "Oswald ", sans-serif;
-  font-weight: 300;
-  font-size: 1.125em;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.17rem;
   text-align: center;
 }
 
 h1 {
-  font-size: 1.8em;
+  padding-top: 35px;
+  font-size: 1.9rem;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 h5 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 h6 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 header {
   background-color: rgb(249, 57, 96);
+  border-bottom: 1.5vh solid rgb(188, 58, 65);
   height: 40vh;
   z-index: 0;
   position: absolute;
@@ -82,15 +88,18 @@ header .divHeader {
   padding-bottom: 5px;
   height: 25vh;
 }
+header .divHeader a:hover {
+  padding: 1px;
+}
 header .divHeader ul {
   margin: 0px 5px;
 }
-header .divHeader li {
+header .divHeader ul li {
   list-style: none;
   margin: 0px 5px;
 }
 header .divHeader .rrss svg {
-  margin: 0px 5px;
+  margin: 0px 5px 0px 0px;
 }
 
 .logo {
@@ -105,6 +114,7 @@ header .divHeader .rrss svg {
 .container {
   background-color: rgb(252, 242, 231);
   width: 75%;
+  border-radius: 10px;
 }
 
 .mainIndex {
@@ -112,16 +122,21 @@ header .divHeader .rrss svg {
   top: 25vh;
 }
 .mainIndex img {
-  border-radius: 15%;
-  padding: 5px 10px;
-  width: 260px;
-  height: 240px;
+  padding: 10px 5px;
+  width: 70%;
+  max-width: 500px;
+  min-width: 250px;
+  min-height: 250px;
+  border-radius: 30px;
+  display: flex;
+  margin: auto;
 }
 .mainIndex p {
-  max-width: 500px;
+  max-width: 50%;
   position: relative;
   top: 15px;
-  padding: 10px;
+  padding: 0px 5px 5px 5px;
+  margin-bottom: 35px;
 }
 
 footer {
@@ -130,10 +145,21 @@ footer {
   width: 75%;
   background-color: rgb(252, 242, 231);
   height: 30vh;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 200px;
+}
+footer div {
+  height: 17vh;
+}
+footer div p {
+  font-size: 0.8rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainNosotros {
@@ -188,13 +214,25 @@ footer {
 }
 .mainProductos img {
   width: 90%;
-  height: 400px;
+  max-width: 520px;
+  min-height: 350px;
   border-radius: 15px;
   display: flex;
   margin: auto;
 }
 .mainProductos p {
-  padding: 5px;
+  margin-top: 15px;
+}
+.mainProductos .btn {
+  background-color: rgb(255, 120, 145);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 110px;
+}
+.mainProductos .btn:hover {
+  background-color: rgb(255, 90, 125);
+  color: white;
 }
 
 .mainContenido {
@@ -220,8 +258,8 @@ footer {
   margin: auto;
 }
 .mainContenido .customIframe iframe {
-  width: 65%;
-  height: 65%;
+  width: 80%;
+  height: 90%;
   display: flex;
   margin: 0px auto;
 }
@@ -231,17 +269,36 @@ footer {
   top: 25vh;
 }
 .mainContacto label {
+  display: block;
   margin-bottom: 10px;
-}
-.mainContacto .email {
-  position: relative;
-  left: 20px;
 }
 .mainContacto h2 {
   padding-bottom: 20px;
 }
-.mainContacto .reset {
-  margin-left: 50px;
+.mainContacto li {
+  margin-bottom: 5px;
+}
+.mainContacto form {
+  max-width: 50vw;
+}
+.mainContacto input, .mainContacto textarea, .mainContacto button {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.009px solid rgba(212, 86, 109, 0.26);
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 9px;
+}
+.mainContacto .btn {
+  background-color: rgb(255, 120, 145);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 110px;
+}
+.mainContacto .btn:hover {
+  background-color: rgb(255, 90, 125);
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
