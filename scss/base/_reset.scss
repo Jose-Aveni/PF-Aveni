@@ -3,14 +3,18 @@
     margin: 0;
     padding: 0;
 }
+li {
+    list-style: none;
+}
 a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
-    &:hover {
-      color: rgba(0, 0, 0, 0.75);
-    }
-    &:active {
-      color: black;
-    }
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  &:hover {
+    color: rgb(63, 63, 63);
   }
+  &:active {
+    color: rgb(0, 0, 0);
+  }
+}
+
   

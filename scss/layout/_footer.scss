@@ -6,8 +6,19 @@ footer {
   width: map-get($bgcontainer_img, min-w);
   background-color: map-get($bgcontainer_img, color);
   height: 30vh;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 200px;
+  div {
+      height: 17vh; 
+    p {
+      font-size: 0.8rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

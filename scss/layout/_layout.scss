@@ -3,5 +3,6 @@
 .container {
   background-color: map-get($bgcontainer_img, color);
   width: map-get($bgcontainer_img, min-w);
+  border-radius: map-get($bgcontainer_img, borde);
 }
 

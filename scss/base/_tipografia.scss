@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Oswald:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400;1,500&family=Oswald:wght@300;400;500&display=swap');
 @import "../abstracts/mixins";
 @import "../abstracts/font-map";
 
@@ -16,11 +16,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
     font-family: map-get($f-family, fuentePrincipal);
-    font-weight: map-get($f-weight, claro);
+    font-weight: map-get($f-weight, normal);
     font-size: map-get($f-size, p);
     text-align: $t-center;
 }
 h1{
+    padding-top: 35px;
     font-size: map-get($f-size, h1);
 }
 h2{

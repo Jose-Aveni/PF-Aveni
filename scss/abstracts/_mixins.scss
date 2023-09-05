@@ -30,3 +30,15 @@
   border-style: solid;
   border-color: white;
 }
+
+@mixin btn{
+    background-color: rgb(255, 120, 145);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 110px;
+  &:hover {
+    background-color: rgb(255, 90, 125);
+    color: white;
+  }
+}

@@ -1,3 +1,4 @@
+@import "../../abstracts/mixins";
 .mainProductos {
   position: relative;
   top: 25vh;
@@ -9,12 +10,16 @@
   }
   img {
     width: 90%;
-    height: 400px;
+    max-width: 520px;
+    min-height: 350px;
     border-radius: 15px;
     display: flex;
     margin: auto;
   }
   p {
-    padding: 5px;
+    margin-top: 15px; 
+  }
+  .btn {
+    @include btn;
   }
 }
