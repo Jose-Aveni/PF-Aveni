@@ -11,13 +11,13 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(240, 240, 240);
+  color: black;
 }
 a:hover {
   color: rgb(63, 63, 63);
 }
 a:active {
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
 body {
@@ -75,21 +75,33 @@ h6 {
   font-size: 1.2rem;
 }
 
-header {
-  background-color: rgb(249, 57, 96);
-  border-bottom: 1.5vh solid rgb(188, 58, 65);
-  height: 40vh;
-  z-index: 0;
+header .divBack {
+  height: 45vh;
+  left: 0;
   position: absolute;
+  background-image: url("../../images/back_header.svg");
+  border-bottom: 1.5vh solid rgb(188, 58, 65);
 }
 header .divHeader {
+  position: relative;
+  z-index: 9;
   display: flex;
   align-items: center;
   padding-bottom: 5px;
-  height: 25vh;
+  height: 30vh;
+}
+header .divHeader .menu {
+  background-color: rgb(249, 54, 96);
+}
+header .divHeader a {
+  color: rgb(240, 240, 240);
 }
 header .divHeader a:hover {
+  color: rgb(63, 63, 63);
   padding: 1px;
+}
+header .divHeader a:active {
+  color: black;
 }
 header .divHeader ul {
   margin: 0px 5px;
@@ -119,7 +131,6 @@ header .divHeader .rrss svg {
 
 .mainIndex {
   position: relative;
-  top: 25vh;
 }
 .mainIndex img {
   padding: 10px 5px;
@@ -141,22 +152,22 @@ header .divHeader .rrss svg {
 
 footer {
   position: relative;
-  top: 25vh;
   width: 75%;
+  max-width: 1320px;
   background-color: rgb(252, 242, 231);
   height: 30vh;
   padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 25px;
 }
 footer div {
   height: 17vh;
 }
 footer div p {
   font-size: 0.8rem;
-  height: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +175,6 @@ footer div p {
 
 .mainNosotros {
   position: relative;
-  top: 25vh;
 }
 .mainNosotros .mainNosotrosLogo .carousel {
   width: min-content;
@@ -204,7 +214,6 @@ footer div p {
 
 .mainProductos {
   position: relative;
-  top: 25vh;
 }
 .mainProductos .gridProd {
   margin-bottom: 50px;
@@ -215,7 +224,8 @@ footer div p {
 .mainProductos img {
   width: 90%;
   max-width: 520px;
-  min-height: 350px;
+  min-width: 300px;
+  min-height: 300px;
   border-radius: 15px;
   display: flex;
   margin: auto;
@@ -237,7 +247,6 @@ footer div p {
 
 .mainContenido {
   position: relative;
-  top: 25vh;
 }
 .mainContenido .carousel {
   width: 60%;
@@ -266,7 +275,6 @@ footer div p {
 
 .mainContacto {
   position: relative;
-  top: 25vh;
 }
 .mainContacto label {
   display: block;
@@ -299,6 +307,32 @@ footer div p {
 .mainContacto .btn:hover {
   background-color: rgb(255, 90, 125);
   color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .divHeader,
+  .container,
+  footer {
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+  }
+  .divHeader .carousel, .divHeader div, .divHeader img,
+  .container .carousel,
+  .container div,
+  .container img,
+  footer .carousel,
+  footer div,
+  footer img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .divHeader .menu,
+  .container .menu,
+  footer .menu {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
