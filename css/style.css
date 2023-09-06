@@ -79,6 +79,7 @@ header .divBack {
   height: 45vh;
   left: 0;
   position: absolute;
+  background-image: url("../images/back_header.svg");
   border-bottom: 1.5vh solid rgb(188, 58, 65);
 }
 header .divHeader {
