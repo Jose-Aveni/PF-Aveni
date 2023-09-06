@@ -2,23 +2,24 @@
 
 footer {
   position: relative;
-  top: 25vh;
   width: map-get($bgcontainer_img, min-w);
+  max-width: 1320px;
   background-color: map-get($bgcontainer_img, color);
   height: 30vh;
   padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 25px;
   div {
       height: 17vh; 
     p {
       font-size: 0.8rem;
-      height: 100%;
+      height: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
     }
   }
 }
+ 

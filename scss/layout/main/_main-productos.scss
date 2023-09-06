@@ -1,7 +1,6 @@
 @import "../../abstracts/mixins";
 .mainProductos {
   position: relative;
-  top: 25vh;
   .gridProd {
     margin-bottom: 50px;
   }
@@ -11,7 +10,8 @@
   img {
     width: 90%;
     max-width: 520px;
-    min-height: 350px;
+    min-width: 300px;
+    min-height: 300px;
     border-radius: 15px;
     display: flex;
     margin: auto;

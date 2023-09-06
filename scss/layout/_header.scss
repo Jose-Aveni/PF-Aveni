@@ -1,16 +1,30 @@
 header {
-  background-color: rgb(249, 57, 96);
-  border-bottom: 1.5vh solid rgb(188, 58, 65);
-  height: 40vh;
-  z-index: 0;
-  position: absolute;
+  .divBack {
+    height: 45vh;
+    left: 0;
+    position: absolute;
+    background-image: url("../../images/back_header.svg");
+    border-bottom: 1.5vh solid rgb(188, 58, 65);
+  }
   .divHeader {
+    position: relative;
+    z-index: 9;
     display: flex;
     align-items: center;
     padding-bottom: 5px;
-    height: 25vh;
-    a:hover {
-      padding: 1px;
+    height: 30vh;
+    .menu{
+      background-color: rgb(249, 54, 96);
+    }
+    a {
+      color: rgb(240, 240, 240);
+      &:hover {
+        color: rgb(63, 63, 63);
+        padding: 1px;
+      }
+      &:active {
+        color: black;
+      }
     }
     ul {
       margin: 0px 5px;

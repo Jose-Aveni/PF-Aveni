@@ -1,3 +1,4 @@
+@import "./abstracts/variables";
 @import "./base/reset";
 @import "./layout/body";
 @import "./base/tipografia";
@@ -10,3 +11,4 @@
 @import "./layout/main/main-productos";
 @import "./layout/main/main-contenido";
 @import "./layout/main/main-contacto";
+@import "./abstracts/mediaqueries";
