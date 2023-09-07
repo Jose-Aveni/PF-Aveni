@@ -1,24 +1,22 @@
 @import "../abstracts/background-map";
+@import "../base/paleta";
+@import "../abstracts/mixins";
 
 footer {
   position: relative;
   width: map-get($bgcontainer_img, min-w);
   max-width: 1320px;
-  background-color: map-get($bgcontainer_img, color);
+  background-color: map-get($paleta_colores, crema-cafe);
   height: 30vh;
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 10px;
+  @include flex(center, center);
   margin-bottom: 25px;
   div {
       height: 17vh; 
     p {
       font-size: 0.8rem;
       height: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(center, center);
     }
   }
 }

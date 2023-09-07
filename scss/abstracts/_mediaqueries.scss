@@ -1,18 +1,16 @@
+@import "../abstracts/mixins";
 
 @media screen and (max-width: 576px) {
-  .divHeader,
-  .container,
-  footer {
+  .divHeader, .responHeader, .container, footer {
     width: 100%;
     margin: 0px;
     padding: 3px;
     .carousel, div, img {
       width: 100%;
-      margin: 0px;
-      padding: 0px;
-    }   
-    .menu{
-        width: 75%;
+      @include espaciadoNulo;
+    }
+    .menu {
+      width: 75%;
     }
   }
 }

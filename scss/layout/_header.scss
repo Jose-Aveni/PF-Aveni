@@ -1,10 +1,14 @@
+@import "../abstracts/variables";
+@import "../base/paleta";
+@import "../abstracts/mixins";
+
 header {
   .divBack {
     height: 45vh;
     left: 0;
     position: absolute;
     background-image: url("../images/back_header.svg");
-    border-bottom: 1.5vh solid rgb(188, 58, 65);
+    border-bottom: 1.5vh solid map-get($paleta_colores, bordo-borde-header);
   }
   .divHeader {
     position: relative;
@@ -13,13 +17,13 @@ header {
     align-items: center;
     padding-bottom: 5px;
     height: 30vh;
-    .menu{
-      background-color: rgb(249, 54, 96);
+    .menu {
+      background-color: map-get($paleta_colores, rojo-header);
     }
     a {
-      color: rgb(240, 240, 240);
+      color: white;
       &:hover {
-        color: rgb(63, 63, 63);
+        color: map-get($paleta_colores, gris-hover-link);
         padding: 1px;
       }
       &:active {
@@ -27,14 +31,16 @@ header {
       }
     }
     ul {
-      margin: 0px 5px;
+      margin: $m-element-header;
       li {
-        list-style: none;
-        margin: 0px 5px;
+        margin: $m-element-header;
       }
     }
-    .rrss svg {
-      margin: 0px 5px 0px 0px;
+    .rrss {
+      @include flex(center, center);
+      svg {
+        margin: $m-element-header;
+      }
     }
   }
 }

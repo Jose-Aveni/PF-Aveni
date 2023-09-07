@@ -1,7 +1,8 @@
 @import "../abstracts/background-map";
+@import "../base/paleta";
 
 .container {
-  background-color: map-get($bgcontainer_img, color);
+  background-color: map-get($paleta_colores, crema-cafe);
   width: map-get($bgcontainer_img, min-w);
   border-radius: map-get($bgcontainer_img, borde);
 }

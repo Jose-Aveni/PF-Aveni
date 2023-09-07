@@ -1,7 +1,8 @@
+@import "../abstracts/mixins";
+
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    @include espaciadoNulo;
 }
 li {
     list-style: none;
