@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400;1,500&family=Oswald:wght@300;400;500&display=swap");
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 li {
@@ -94,7 +94,7 @@ header .divHeader .menu {
   background-color: rgb(249, 54, 96);
 }
 header .divHeader a {
-  color: rgb(240, 240, 240);
+  color: white;
 }
 header .divHeader a:hover {
   color: rgb(63, 63, 63);
@@ -107,16 +107,25 @@ header .divHeader ul {
   margin: 0px 5px;
 }
 header .divHeader ul li {
-  list-style: none;
   margin: 0px 5px;
 }
+header .divHeader .rrss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 header .divHeader .rrss svg {
-  margin: 0px 5px 0px 0px;
+  margin: 0px 5px;
 }
 
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .logo img {
   width: 8rem;
@@ -156,10 +165,12 @@ footer {
   max-width: 1320px;
   background-color: rgb(252, 242, 231);
   height: 30vh;
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin-bottom: 25px;
 }
 footer div {
@@ -171,26 +182,19 @@ footer div p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .mainNosotros {
   position: relative;
 }
-.mainNosotros .mainNosotrosLogo .carousel {
-  width: min-content;
-}
-.mainNosotros .mainNosotrosLogo .carousel .carousel-control-next-icon, .mainNosotros .mainNosotrosLogo .carousel .carousel-control-prev-icon {
-  filter: invert(1);
-}
-.mainNosotros .mainNosotrosLogo p {
-  padding: 10px;
-  margin: 0px;
+.mainNosotros .mainNosotrosLogo {
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-.mainNosotros .mainNosotrosLogo img {
-  width: 220px;
-  height: 220px;
+  flex-direction: column;
+  flex-wrap: nowrap;
   padding: 0px;
   margin: 0px 20px;
   border-radius: 15px;
@@ -198,8 +202,33 @@ footer div p {
   border-style: solid;
   border-color: white;
 }
+.mainNosotros .mainNosotrosLogo .carousel {
+  width: min-content;
+}
+.mainNosotros .mainNosotrosLogo .carousel .carousel-control-next-icon,
+.mainNosotros .mainNosotrosLogo .carousel .carousel-control-prev-icon {
+  filter: invert(1);
+}
+.mainNosotros .mainNosotrosLogo p {
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.mainNosotros .mainNosotrosLogo img {
+  width: 225px;
+  height: 225px;
+  margin: 0px 20px;
+  border-radius: 15px;
+}
+.mainNosotros .mainNosotrosHumano {
+  margin-top: 45px;
+}
 .mainNosotros .mainNosotrosHumano p {
-  padding: 5px 50px;
+  padding: 5px 30px;
 }
 .mainNosotros .mainNosotrosHumano img {
   padding: 0px;
@@ -208,6 +237,7 @@ footer div p {
   border-width: 10px 0px;
   border-style: solid;
   border-color: white;
+  margin: 2px;
   height: 500px;
   width: 300px;
 }
@@ -239,9 +269,11 @@ footer div p {
   border: none;
   border-radius: 10px;
   width: 110px;
+  padding: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
 }
 .mainProductos .btn:hover {
-  background-color: rgb(255, 90, 125);
   color: white;
 }
 
@@ -280,14 +312,16 @@ footer div p {
   display: block;
   margin-bottom: 10px;
 }
-.mainContacto h2 {
-  padding-bottom: 20px;
-}
 .mainContacto li {
   margin-bottom: 5px;
 }
 .mainContacto form {
-  max-width: 50vw;
+  max-width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .mainContacto input, .mainContacto textarea, .mainContacto button {
   width: 100%;
@@ -303,34 +337,26 @@ footer div p {
   border: none;
   border-radius: 10px;
   width: 110px;
+  padding: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
 }
 .mainContacto .btn:hover {
-  background-color: rgb(255, 90, 125);
   color: white;
 }
 
 @media screen and (max-width: 576px) {
-  .divHeader,
-  .container,
-  footer {
+  .divHeader, .responHeader, .container, footer {
     width: 100%;
     margin: 0px;
     padding: 3px;
   }
-  .divHeader .carousel, .divHeader div, .divHeader img,
-  .container .carousel,
-  .container div,
-  .container img,
-  footer .carousel,
-  footer div,
-  footer img {
+  .divHeader .carousel, .divHeader div, .divHeader img, .responHeader .carousel, .responHeader div, .responHeader img, .container .carousel, .container div, .container img, footer .carousel, footer div, footer img {
     width: 100%;
     margin: 0px;
     padding: 0px;
   }
-  .divHeader .menu,
-  .container .menu,
-  footer .menu {
+  .divHeader .menu, .responHeader .menu, .container .menu, footer .menu {
     width: 75%;
   }
 }
