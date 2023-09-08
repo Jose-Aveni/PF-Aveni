@@ -41,7 +41,7 @@
   font-family: $fuentePrincipal;
   font-weight: map-get($f-weight, normal);
   &:hover {
-    background-color: map-get($paleta_colores, btn-hover);
+    background-color: map-get($paleta_colores, rojo-btn-hover);
     color: white;
   }
 }
