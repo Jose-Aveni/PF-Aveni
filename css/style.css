@@ -274,6 +274,7 @@ footer div p {
   font-weight: 400;
 }
 .mainProductos .btn:hover {
+  background-color: rgb(255, 90, 125);
   color: white;
 }
 
@@ -342,6 +343,7 @@ footer div p {
   font-weight: 400;
 }
 .mainContacto .btn:hover {
+  background-color: rgb(255, 90, 125);
   color: white;
 }
 
