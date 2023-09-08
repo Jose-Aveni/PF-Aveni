@@ -345,6 +345,24 @@ footer div p {
   color: white;
 }
 
+.mainError {
+  position: relative;
+}
+.mainError .error {
+  display: flex;
+  margin: 0px auto;
+  max-width: 85%;
+  max-height: 85%;
+}
+.mainError h1 {
+  margin: 0px;
+  padding: 20px 0px;
+  font-size: 2rem;
+  font-weight: 800;
+  --animate-duration: 2.7s;
+  color: rgb(249, 54, 96);
+}
+
 @media screen and (max-width: 576px) {
   .divHeader, .responHeader, .container, footer {
     width: 100%;
