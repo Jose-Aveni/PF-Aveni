@@ -1,0 +1,18 @@
+@import "../../base/paleta";
+.mainError {
+  position: relative;
+  .error {
+    display: flex;
+    margin: 0px auto;
+    max-width: 85%;
+    max-height: 85%;
+  }
+  h1 {
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 2rem;
+    font-weight: 800;
+    --animate-duration: 2.7s;
+    color: map-get($paleta_colores, rojo-header);
+  }
+}
